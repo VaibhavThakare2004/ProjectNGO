@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Kshitij Foundation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(90deg, #e02c85, #ee609c);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideDown 1.2s ease-in-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Section Heading */
+        h2 {
+            text-align: center;
+            color: #e02c85;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            position: relative;
+            animation: popUp 1.2s ease;
+        }
+
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background-color: #e02c85;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+        }
+
+        /* Bank Details Section */
+        .bank-details {
+            background: linear-gradient(120deg, #f5f5f5, #eeeeee);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            animation: fadeUp 1.5s ease;
+        }
+
+        .bank-details:hover {
+            transform: scale(1.02);
+        }
+
+        .bank-details h3 {
+            color: #e02c85;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .bank-details p {
+            font-size: 1.2em;
+            color: #333;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* Highlight Section */
+        .highlight {
+            background-color: #2b6b5d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            animation: zoomIn 1.2s ease;
+        }
+
+        /* Call to Action Button */
+        .cta-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 30px;
+            background-color: #e02c85;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .cta-button:hover {
+            background-color: #c62572;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2b6b5d;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes popUp {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .bank-details {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Support Kshitij Foundation</h1>
+        <p>Your donation makes a difference!</p>
+    </header>
+
+    <!-- Main Donation Section -->
+    <div class="container">
+        <h2>Donate Us</h2>
+        <p>We are grateful for your support in empowering communities and driving sustainable change. Kindly find the bank details below to make your valuable contribution.</p>
+
+        <div class="bank-details">
+            <h3>Bank Details for Donation</h3>
+            <p><strong>Bank Name:</strong> Central Bank of India</p>
+            <p><strong>Account Name:</strong>KSHITIJ BAHUDDESHIYA SANSTHA SHELUBAZAR</p>
+            <p><strong>Account Number:</strong> 5172755696</p>
+            <p><strong>IFSC Code:</strong> CBIN0281881</p>
+            <p><strong>Branch Name:</strong> Shelubazar</p>
+            <p style="color: #e91e63; text-align: center;"><strong>Donations are eligible under 80G IT deduction</strong></p>
+
+
+        </div>
+
+        <div class="highlight">
+            <p>"Your support helps us transform lives and bring hope to those in need."</p>
+        </div>
+
+        <a href="contact.html" class="cta-button">Contact Us for More Details</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Kshitij Foundation. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
